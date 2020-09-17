@@ -1,21 +1,53 @@
-const url= "https://t9jt3myad3.execute-api.eu-west-2.amazonaws.com/api/products";
+/*import {error-message} from "./conmponents/error-message.js";
 
-const resultsContainer =document.querySelector(".results");
+const simulateError = true;
+const limit= 8; */
 
-async function getProducts() {
+import {createHtml} from "./components/createHTML.js";
 
-    //fetch
-const response = await fetch(url);
+const url = "https://t9jt3myad3.execute-api.eu-west-2.amazonaws.com/api/products";
 
-const results = await response.json();
 
-const facts = results.all;
+const resultsContainer=document.querySelector(".results");
 
-  for(let i= 0; i < facts.length; i++) {
-      console.log(facts[i].text);
 
-      resultsContainer.innerHTML += `<div class="results">${facts[i].text}</div>`;
-  }
+
+/*TESTE TESTE ERROR MESSAGE
+function displayMessage (messageType, message) {
+  return `<div class= "message ${messageType}">${message}</div>`;
 }
 
-getProducts();
+try {
+  if (simulateError) {
+throw "Bad things happened aunau";
+  }
+
+  for (let i = 0; i < data.length; i++) {
+ //Exit loop
+  if (limit && i === limit) {
+    break;
+  }
+
+  resultsContainer.innerHTML += getProducts(data[i]);
+  }
+ 
+{ catch (error) {
+  console.log(error);
+  resultsContainer.innerHTML = displayMessage("error", error);
+}*/
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
